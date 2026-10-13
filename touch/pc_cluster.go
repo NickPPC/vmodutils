@@ -14,6 +14,7 @@ import (
 	"go.viam.com/rdk/services/vision"
 	viz "go.viam.com/rdk/vision"
 	"go.viam.com/rdk/vision/classification"
+	"go.viam.com/rdk/vision/detection3d"
 	"go.viam.com/rdk/vision/objectdetection"
 	"go.viam.com/rdk/vision/viscapture"
 
@@ -223,6 +224,10 @@ func (cs *ClusterService) Classifications(
 	n int,
 	extra map[string]interface{},
 ) (classification.Classifications, error) {
+	return nil, fmt.Errorf("n/a")
+}
+
+func (cs *ClusterService) GetDetections3D(ctx context.Context, cameraName string, extra map[string]interface{}) ([]*detection3d.Detection, error) {
 	return nil, fmt.Errorf("n/a")
 }
 
