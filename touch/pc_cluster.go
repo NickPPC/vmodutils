@@ -228,7 +228,7 @@ func (cs *ClusterService) Classifications(
 }
 
 func (cs *ClusterService) GetDetections3D(ctx context.Context, cameraName string, extra map[string]interface{}) ([]*detection3d.Detection, error) {
-	return nil, fmt.Errorf("n/a")
+	return nil, fmt.Errorf("not implemented")
 }
 
 func (cs *ClusterService) GetObjectPointClouds(ctx context.Context, cameraName string, extra map[string]interface{}) ([]*viz.Object, error) {
